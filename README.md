@@ -47,10 +47,9 @@ This repository contains a **ready-to-use Strapi CMS** with:
 **Important:** On first startup, you need to create an admin account.
 
 1. Go to: http://localhost:1337/admin
-2. Fill in the registration form:
-   - First Name: Your Name
-   - Email: your-email@example.com
-   - Password: (strong password)
+2. Login Detail:
+   - Email: bibash@fylo.com
+   - Password: (Ask Bibash)
 3. Click "Let's start"
 
 ---
