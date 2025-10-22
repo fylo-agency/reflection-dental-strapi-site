@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build outputs
+dist/
+build/
+.cache/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Database backups (committed separately)
+database-backups/*.sql
+!database-backups/.gitkeep
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Strapi generated files
+.strapi/
+.strapi-updater.json
+
+# Uploads (media files are stored in database, not needed in git)
+app/public/uploads/*
+!app/public/uploads/.gitkeep
+
+# Temporary files
+*.tmp
+temp/
+
+# Docker volumes
+postgres-data/
