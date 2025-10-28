@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_sections_doctor_profiles",
+  "info": {
+    "displayName": "Doctor Profile",
+    "icon": "user-md",
+    "description": "Profile section for individual doctors with complete bio"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "default": "DDS"
+    },
+    "profileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "lifestyleImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "bio": {
+      "type": "richtext",
+      "required": true
+    },
+    "badges": {
+      "type": "json"
+    },
+    "education": {
+      "type": "text"
+    },
+    "specialties": {
+      "type": "json"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

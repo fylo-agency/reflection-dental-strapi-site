@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+############################
+# Package managers
+############################
+
+.yarn/*
+!.yarn/cache
+!.yarn/unplugged
+!.yarn/patches
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+yarn-error.log
+
+############################
+# Tests
+############################
+
+coverage
+
+############################
+# Strapi
+############################
+
+.env
+license.txt
+exports
+.strapi
+dist
+build
+.strapi-updater.json
+.strapi-cloud.json

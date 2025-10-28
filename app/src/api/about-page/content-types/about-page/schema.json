@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "about_pages",
+  "info": {
+    "singularName": "about-page",
+    "pluralName": "about-pages",
+    "displayName": "About Page",
+    "description": "Special about pages with dynamic content sections (Meet Doctors, Team, Core Values, etc.)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "heroHeading": {
+      "type": "string"
+    },
+    "heroBackgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.doctor-profile",
+        "sections.team-member",
+        "sections.core-value",
+        "sections.article-content",
+        "sections.video-embed",
+        "sections.text-content"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

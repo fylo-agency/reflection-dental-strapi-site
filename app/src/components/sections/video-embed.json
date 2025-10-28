@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_sections_video_embeds",
+  "info": {
+    "displayName": "Video Embed",
+    "icon": "video",
+    "description": "Embedded video section (YouTube, Vimeo, etc.)"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "videoUrl": {
+      "type": "string",
+      "required": true
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "description": {
+      "type": "text"
+    },
+    "platform": {
+      "type": "enumeration",
+      "enum": ["YouTube", "Vimeo", "Other"],
+      "default": "YouTube"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

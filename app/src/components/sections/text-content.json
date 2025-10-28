@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_text_contents",
+  "info": {
+    "displayName": "Text Content",
+    "icon": "align-left",
+    "description": "Generic text content section with heading and body"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
