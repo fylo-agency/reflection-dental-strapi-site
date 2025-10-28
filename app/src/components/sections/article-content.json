@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_sections_article_contents",
+  "info": {
+    "displayName": "Article Content",
+    "icon": "file-alt",
+    "description": "Article section with heading and rich text content"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_location_addresses",
+  "info": {
+    "displayName": "Address",
+    "description": "Physical address information"
+  },
+  "options": {},
+  "attributes": {
+    "street": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "state": {
+      "type": "string",
+      "required": true
+    },
+    "zipCode": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string",
+      "default": "USA"
+    }
+  }
+}

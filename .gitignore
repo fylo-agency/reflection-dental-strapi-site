@@ -36,8 +36,13 @@ Thumbs.db
 .strapi-updater.json
 
 # Uploads (media files are stored in database, not needed in git)
+# But KEEP app folder itself - only ignore upload files
 app/public/uploads/*
 !app/public/uploads/.gitkeep
+
+# Strapi admin panel cache (don't commit)
+app/.cache/
+app/exports/
 
 # Temporary files
 *.tmp

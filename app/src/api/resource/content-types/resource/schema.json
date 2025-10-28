@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resources",
+  "info": {
+    "singularName": "resource",
+    "pluralName": "resources",
+    "displayName": "Resource",
+    "description": "Resource pages like dental savings plans, forms, galleries, etc."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "metaTitle": {
+      "type": "string",
+      "maxLength": 60
+    },
+    "metaDescription": {
+      "type": "string",
+      "maxLength": 160
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "publishedAt": {
+      "type": "datetime"
+    }
+  }
+}

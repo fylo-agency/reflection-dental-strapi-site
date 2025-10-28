@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_sections_team_members",
+  "info": {
+    "displayName": "Team Member",
+    "icon": "users",
+    "description": "Profile section for team members (hygienists, coordinators, etc.)"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "role": {
+      "type": "string",
+      "required": true
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "bio": {
+      "type": "richtext",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}
